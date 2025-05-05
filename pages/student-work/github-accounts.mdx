@@ -1,24 +1,6 @@
-export function AccountLinks() {
-    const  accountCSV = process.env.NEXT_PUBLIC_STUDENT_GITHUB_USERNAMES;
 
-    const accounts = accountCSV.split(',');
-
-    return (
-    <div>
-      {accounts.map((account) => (
-        <span>{" "}
-          <a href={`https://github.com/${account}`}>{account}</a> |
-        </span>
-      ))}
-    </div>
-    )
-
-}
 
 # Student GitHub Accounts
 
 For this course, I encourage you to collaborate on the assignments to help you learn the material and improve your coding skill. Please use each other's public GitHub repositories to see how another student solved a problem, either as a comparison to how you solved it or as a solution for how to solve the assignment.
 
-Below is a list of all the students in the class and a link to their GitHub account. Please use this list to find other students to collaborate with. I recommend you star and/or follow other students' repositories to help them out and to help you find them again later.
-
-<AccountLinks />
